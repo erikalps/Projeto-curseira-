@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+\\\\\\\\\\\\\\\\\\\\\\\\<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,44 +7,50 @@
     <title>Lucky Shrub</title>
 </head>
 <body>
-    <header class="logo">
-        <img src="img/Asset 2@3x.png" alt="Lucky Shrub Logo"> <!--logo-->
+   <div class="container">
+    <header>
+        <img src="img/Asset 2@3x.png" alt="Lucky Shrub Logo" class="logo"> <!--logo-->
+        <nav class="Menu"> <!--menu-->
+            <ul>
+                <li><a href="#" class="_active">Home</a></li>
+                <li><a href="#">Catalog</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav class="Menu"> <!--menu-->
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Menu</a></li>
-            <li><a href="">Book</a></li>
-            <li><a href="">About</a></li>
-        </ul>
-    </nav>
-    <main> <!--conteudo principal-->
-        <section>
-            <article class="promocao">
-                <div class="img-container">
-                    <img id = "imgpromo" src="img/pexels-cottonbro-4505166.jpg" alt="Plant promotion image">
-                    <P>Specialist in garden design and creation</P>
-                </div>
-                <h1>50% discount on your first purchase</h1> <!--promocao principal-->
-            </article>
+   </div>
+ 
+   
+    <main class="container"> <!--conteudo principal-->
+        <section  id="promo">
+            <img id = "imgpromo" src="img/promo.jpg" alt="Plant promotion image">
+            <div class="img-container__text">
+                <h1>50% discount <br> on your first purchase</h1> <!--promocao principal-->   
+                <button>Go to Catalog</button>
+            </div>           
         </section>
  
          <section>  <!--primeia coluna -->
-            <article class="Artigos">
-                <h2>Maintenance and Landscaping </h2>
-                <p>Find everything you need for landscaping with your style</p>
-                <img src="img/pexels-cottonbro-4505162.jpg" alt="Maintenance and landscaping">
-            </article>
-            <article>  <!--segunda coluna -->
-                <h2>Maintenance and Landscaping </h2>
-                <p>Find everything you need for landscaping with your style</p>
-                <img src="img/pexels-valeria-ushakova-603898-3094208.jpg" alt="Maintenance and landscaping">
-            </article>
-            <article>      <!--terceira coluna -->
-            <h2>maintenance and landscaping </h2>
-            <p>find everything you need for landscaping with your style</p>
-            <img src="img/pexels-cottonbro-9707356.jpg" alt="Maintenance and landscaping">
-           </article>
+            <h2>Our Services</h2>
+            <div class="Services-container">
+                <div class="Artigos">
+                    <h2>Maintenance and Landscaping </h2>
+                    <p>Find everything you need for landscaping with your style</p>
+                    <img src="img/pexels-cottonbro-4505162.jpg" alt="Maintenance and landscaping">
+                </div>
+                <div>  <!--segunda coluna -->
+                    <h2>Maintenance and Landscaping </h2>
+                    <p>Find everything you need for landscaping with your style</p>
+                    <img src="img/pexels-valeria-ushakova-603898-3094208.jpg" alt="Maintenance and landscaping">
+                </div>
+                <div>      <!--terceira coluna -->
+                    <h2>maintenance and landscaping </h2>
+                    <p>find everything you need for landscaping with your style</p>
+                    <img src="img/pexels-cottonbro-9707356.jpg" alt="Maintenance and landscaping">
+               </div>
+            </div>
+           
         </section>
     </main>
     <footer> <!--rodape-->

@@ -6,10 +6,12 @@
 body{
     background-color: #F5F5DC;
     font-family:Arial, Helvetica, sans-serif;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    margin-left: 5%;
-    margin-right: 5%;
+    overflow-x: hidden;
+}
+
+.container {
+    margin:0 auto;
+    max-width: 1400px;
 }
 h1{
     font-size: 3rem;
@@ -18,10 +20,11 @@ h1{
 h2{
     font-size: 2rem;
 }
-.logo img {
+img.logo {
     display: block; 
     margin: 0 auto; 
     height: 200px;
+    padding: 25px;
    
 }
 
@@ -39,49 +42,79 @@ nav li {
 
 nav li a {
     display: flex;
-    color: #333; /* Cor dos itens da lista */
+    color: white; /* Cor dos itens da lista */
     text-decoration: none; /* Remove sublinhado */
     padding: 10px; /* Espaçamento interno para os links */
+    transition: 0.4s;
+   font-weight: bold;
+}
+nav li a._active{
+    color: #e1f224;
+}
+nav li a:hover{
+    color: #e1f224;
 }
 nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-section{
+
+#promo {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
     display: flex;
-    margin-top: 20px;  
 }
 
-#imgpromo {
-    height: 250px;
-    width: 80%;
-    border-radius: 1rem;
-    object-fit:cover;
-}
-
-.img-container p {
+#promo img{
     position: absolute;
-    top: 59%;
-    left: 72%;
-    transform: translate(-50%, -50%); /* Centraliza o parágrafo na imagem */
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para melhor legibilidade */
-    padding: 10px; /* Espaçamento interno */
-    border-radius: 1rem; /* Bordas arredondadas */
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+
+}
+
+#promo button{
+    
+    font-size: 1.5rem;
+    text-decoration:none;
+    padding: 1px 20px;
+    position: relative;
+    border: 0;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 5px;
+    border: 3px solid #e1f224;
+    color:#e1f224;
+    background-color: transparent;
+    font-weight: bold;
+    /*text-transform: uppercase;*/
+}
+
+#promo button:hover{
+    background-color: #e1f224;
+    color:#008B8B;
+}
+
+.img-container__text{
+    z-index: 1; /*coloca o elemento em cima do outro*/
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.Services-container{
+    display: flex;
 }
  
 
-.Artigos article {
-   display: grid;
-   grid-row: 1;
-   width:30px;
-}
-article{
-    flex: 1;
-    margin: 10px;
-    text-align: center;
-}
 footer{
     display: flex;
     flex: 1;
