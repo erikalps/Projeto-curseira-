@@ -44,11 +44,11 @@ nav li {
 
 nav li a {
     display: flex;
-    color: white; /* Cor dos itens da lista */
+    color: #fff; /* Cor dos itens da lista */
     text-decoration: none; /* Remove sublinhado */
     padding: 10px; /* Espaçamento interno para os links */
     transition: 0.4s;
-   font-weight: bold;
+    font-weight: bold;
 }
 nav li a._active{
     color: #e1f224;
@@ -136,7 +136,8 @@ nav ul {
    position: absolute;
    top: 0;
    left: 0;
-}
+   border-radius: 5px;
+} 
 
 .Services-item__text{
     position: relative;
@@ -164,12 +165,31 @@ nav ul {
     opacity: 1;
 }
 
-footer{
+footer.container-footer {
+    padding: 20px 0;
+    text-align: center;
     display: flex;
-    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #FFEBCD;
 }
 
+footer.container-footer .item-footer {
+    flex: 1;
+    padding: 10px;
+}
 
+footer.container-footer .item-footer img {
+    max-width: 80px;
+    margin: 0 auto;
+}
 
-
+footer.container-footer .item-footer p {
+    margin: 10px 0 0 0;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  
+    
+}
 
