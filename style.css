@@ -20,7 +20,7 @@ h1{
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 h2{
-    font-size: 2rem;
+    font-size: auto;
 }
 img.logo {
     display: block; 
@@ -44,9 +44,9 @@ nav li {
 
 nav li a {
     display: flex;
-    color: #fff; /* Cor dos itens da lista */
-    text-decoration: none; /* Remove sublinhado */
-    padding: 10px; /* Espaçamento interno para os links */
+    color: #fff; 
+    text-decoration: none; 
+    padding: 10px;
     transition: 0.4s;
     font-weight: bold;
 }
@@ -78,8 +78,7 @@ nav ul {
 
 }
 
-#promo button{
-    
+#promo button{ 
     font-size: 1.5rem;
     text-decoration:none;
     padding: 1px 20px;
@@ -192,4 +191,53 @@ footer.container-footer .item-footer p {
   
     
 }
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
 
+    .Services-container { 
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .Services__item {
+        flex: 0 0 90%;
+        height: auto; 
+    }
+
+    .Services-item__text {
+        padding: 30px;
+    }
+
+    #promo {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #promo button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    img.logo {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .Services__item {
+        flex: 0 0 100%;
+    }
+
+    #promo button {
+        font-size: 1rem;
+    }
+
+    img.logo {
+        height: 120px;
+    }
+}
