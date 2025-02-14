@@ -171,7 +171,7 @@ footer.container-footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #FFEBCD;
+   
 }
 
 footer.container-footer .item-footer {
@@ -180,17 +180,11 @@ footer.container-footer .item-footer {
 }
 
 footer.container-footer .item-footer img {
-    max-width: 80px;
+    max-width: 50px;
     margin: 0 auto;
 }
 
-footer.container-footer .item-footer p {
-    margin: 10px 0 0 0;
-    font-size: 1rem;
-    letter-spacing: 0.5px;
-  
-    
-}
+
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
 
